@@ -15,12 +15,12 @@ function starter_assets()
  wp_enqueue_style("bootstrap-css", get_theme_file_uri("/assets/css/bootstrap.css"));
  wp_enqueue_style("style-css", get_theme_file_uri("/assets/css/style.css"));
 
- wp_enqueue_scripts("easing-jquery-js", get_theme_file_uri("/assets/js/jquery.easing.1.3.js"), array("jqeury"), null, true);
- wp_enqueue_scripts("bootstrap-jquery-js", get_theme_file_uri("/assets/js/bootstrap.min.js"), array("jqeury"), null, true);
- wp_enqueue_scripts("waypoints-js", get_theme_file_uri("/assets/js/jquery.waypoints.min.js"), array("jqeury"), null, true);
- wp_enqueue_scripts("jquery.stellar-js", get_theme_file_uri("/assets/js/jquery.stellar.min.js"), array("jqeury"), null, true);
- wp_enqueue_scripts("simplyCountdown-js", get_theme_file_uri("/assets/js/simplyCountdown.js"), array("jqeury"), null, true);
- wp_enqueue_scripts("simplyCountdown-js", get_theme_file_uri("/assets/js/main.js"), array("jqeury"), null, true);
+ wp_enqueue_script("easing-jquery-js", get_theme_file_uri("/assets/js/jquery.easing.1.3.js"), array("jqeury"), null, true);
+ wp_enqueue_script("bootstrap-jquery-js", get_theme_file_uri("/assets/js/bootstrap.min.js"), array("jqeury"), null, true);
+ wp_enqueue_script("waypoints-js", get_theme_file_uri("/assets/js/jquery.waypoints.min.js"), array("jqeury"), null, true);
+ wp_enqueue_script("jquery.stellar-js", get_theme_file_uri("/assets/js/jquery.stellar.min.js"), array("jqeury"), null, true);
+ wp_enqueue_script("simplyCountdown-js", get_theme_file_uri("/assets/js/simplyCountdown.js"), array("jqeury"), null, true);
+ wp_enqueue_script("simplyCountdown-js", get_theme_file_uri("/assets/js/main.js"), array("jqeury"), null, true);
 }
 add_action("wp_enqueue_scripts", "starter_assets");
 
