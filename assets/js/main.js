@@ -1,4 +1,4 @@
-;(function () {
+;(function ($) {
 	
 	'use strict';
 
@@ -150,14 +150,7 @@
    day: d.getDate()
   });
 
-  //jQuery example
-  $('#simply-countdown-losange').simplyCountdown({
-   year: "2023",
-   month: "06",
-   day: "12",
-   enableUtc: false
-  });
 
 
 
-}());
+}(jQuery));
