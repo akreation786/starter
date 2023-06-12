@@ -26,6 +26,23 @@ add_action("wp_enqueue_scripts", "starter_assets");
 
 
 
+function starter_styles()
+{
+ if (is_page()) {
+  $thumbnail_url = get_the_post_thumbnail_url(null, "large");
+?>
+  <style>
+   .hero_bg {
+    background-image: url("<?php echo $thumbnail_url; ?>");
+   }
+  </style>
+<?php
+ }
+}
+add_action("wp_head", "starter_styles");
+
+
+
 function starter_sidebars()
 {
  register_sidebar(
