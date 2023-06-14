@@ -122,7 +122,7 @@
                 minutes: 0,
                 seconds: 0,
                 words: {
-                    days: 'day',
+                    days: 'HOUR',
                     hours: 'hour',
                     minutes: 'minute',
                     seconds: 'second',

@@ -130,22 +130,21 @@
 	};
 
 
-	// simple CountDown 
-	var countDown = function() {
-		var d = new Date(new Date().getTime() + 800 * 120 * 120 * 2000);
+	// simple CountDown
+	var countDown = function() { 
+ var d = new Date(new Date().getTime() + 800 * 120 * 120 * 2000);
 
-  // default example
-  simplyCountdown('.simply-countdown-one', {
-   year: d.getFullYear(),
-   month: d.getMonth() + 1,
-   day: d.getDate()
-  });
+ // default example
 
- };
-
+ simplyCountdown('.simply-countdown', {
+  year: "2023",
+  month: "06",
+  day: "30"
+ });
+	
+};
 	
 	$(function(){
-		contentWayPoint();
 		goToTop();
 		loaderPage();
 		counterWayPoint();

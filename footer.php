@@ -16,6 +16,17 @@
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/simplyCountdown.js"></script>
 <!-- Main -->
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
+<script>
+ var d = new Date(new Date().getTime() + 800 * 120 * 120 * 2000);
+
+ // default example
+
+ simplyCountdown('.simply-countdown', {
+  year: "2023",
+  month: "06",
+  day: "30"
+ });
+</script>
 </body>
 
 

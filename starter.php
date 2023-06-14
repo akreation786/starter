@@ -5,6 +5,9 @@
 ?>
 <?php
 get_header();
+$placeholder_text = get_post_meta(get_the_ID(), "placeholder", true);
+$button_label = get_post_meta(get_the_ID(), "button text", true);
+$hint = get_post_meta(get_the_ID(), "hint", true);
 ?>
 
 <body>
@@ -31,14 +34,15 @@ get_header();
        <div class="display-tc animate-box" data-animate-effect="fadeIn">
         <h1><?php the_title(); ?></h1>
         <h2><?php the_content(); ?></h2>
-        <div class="simply-countdown simply-countdown-one"></div>
+        <div class="simply-countdown simply-countdown"></div>
         <div class="row">
          <h2>Notify me when it's ready</h2>
          <form class="form-inline" id="fh5co-header-subscribe">
           <div class="col-md-12 col-md-offset-0">
-           <div class="form-group">
-            <input type="text" class="form-control" id="email" placeholder="Get notify by email">
-            <button type="submit" class="btn btn-primary">Send</button>
+           <div class="form-group text-left">
+            <input type="text" class="form-control" id="email" placeholder="<?php echo esc_attr($placeholder_text); ?>">
+            <button type="submit" class="btn btn-primary"><?php echo esc_attr($button_label); ?></button>
+            <p><?php echo esc_html($hint); ?></p>
            </div>
           </div>
          </form>
