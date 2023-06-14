@@ -1,23 +1,21 @@
 <?php wp_footer(); ?>
 
-<script>
- var d = new Date(new Date().getTime() + 800 * 120 * 120 * 2000);
+<!-- jQuery -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.waypoints.min.js"></script>
 
- // default example
- simplyCountdown('.simply-countdown-one', {
-  year: d.getFullYear(),
-  month: d.getMonth() + 1,
-  day: d.getDate()
- });
+<!-- Stellar -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.stellar.min.js"></script>
 
- //jQuery example
- $('#simply-countdown-losange').simplyCountdown({
-  year: d.getFullYear(),
-  month: d.getMonth() + 1,
-  day: d.getDate(),
-  enableUtc: false
- });
-</script>
+<!-- Count Down -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/simplyCountdown.js"></script>
+<!-- Main -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 </body>
 
 
